@@ -1,0 +1,22 @@
+{
+  "name": "b4bz.io",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "gridsome": "^0.7.5"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.24",
+    "@fortawesome/free-brands-svg-icons": "^5.11.1",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.7",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-resources-loader": "^1.2.1"
+  }
+}

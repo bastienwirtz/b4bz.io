@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src https: data: 'unsafe-inline' 'unsafe-eval'"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Powered-By = "Caffeine Drips"

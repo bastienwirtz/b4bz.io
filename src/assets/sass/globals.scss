@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+$family-sans-serif: "Open Sans", sans-serif;
+$family-monospace: "Space Mono", monospace;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// /!\ Keep background colors sync with `theme-color` meta info
+$theme-light: (
+  background: #f5f5f5,
+  text: #363636,
+  text-inverted: #eaeaea,
+  text-title: #303030,
+  text-subtitle: #424242,
+  link: #303030,
+  link-hover: #000000,
+  bg-highlight: #424242
+);
+$theme-dark: (
+  background: #131313,
+  text: #eaeaea,
+  text-inverted: #363636,
+  text-title: #fafafa,
+  text-subtitle: #f5f5f5,
+  link: #fafafa,
+  link-hover: #ffffff,
+  bg-highlight: #f5f5f5
+);
+
+@mixin theme($theme) {
+  background-color: map-get($theme, "background");
+  color: map-get($theme, "text");
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: map-get($theme, "text-title");
+  }
+
+  .subtitle {
+    color: map-get($theme, "text-subtitle");
+    strong {
+      color: map-get($theme, "text");
+    }
+  }
+
+  a:not(.button) {
+    color: map-get($theme, "link");
+
+    &:hover {
+      color: map-get($theme, "link-hover");
+    }
+  }
+
+  .highlight {
+    background-color: map-get($theme, "bg-highlight");
+    color: map-get($theme, "text-inverted");
+  }
+}
+
+// Themes
+#app {
+  transition: background-color 0.3s ease;
+
+  .highlight {
+    padding: 0 3px;
+  }
+
+  // Default theme
+  @include theme($theme-dark);
+
+  // System pref theme
+  @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+    @include theme($theme-dark);
+  }
+
+  @media (prefers-color-scheme: light) {
+    @include theme($theme-light);
+  }
+
+  // User override theme
+  &.is-dark {
+    @include theme($theme-dark);
+  }
+
+  &.is-light {
+    @include theme($theme-light);
+  }
+}
