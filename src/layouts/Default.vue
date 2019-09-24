@@ -52,6 +52,12 @@ export default {
   },
   computed: {
     isDark: function() {
+      if (process.isServer) {
+        // matchMedia will not work server side
+        // default is dark mode
+        return true;
+      }
+
       return this.overrideDark !== null
         ? this.overrideDark
         : matchMedia("(prefers-color-scheme: dark)").matches;
