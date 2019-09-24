@@ -20,22 +20,34 @@
         <div class="social-contacts is-inline-block">
           <a
             href="https://github.com/bastienwirtz"
+            target="_blank"
             aria-label="Follow me on Github"
             ><font-awesome :icon="['fab', 'github']"
           /></a>
           <a
             href="https://twitter.com/babooon"
+            target="_blank"
             aria-label="Follow me on Twitter"
             ><font-awesome :icon="['fab', 'twitter']"
           /></a>
           <a
             href="https://www.linkedin.com/in/bastien-wirtz/?locale=en_US"
+            target="_blank"
             aria-label="Linkedin"
             ><font-awesome :icon="['fab', 'linkedin-in']"
           /></a>
         </div>
       </div>
     </section>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Bastien Wirtz",
+        "jobTitle": "Software engineer",
+        "url": "https://b4bz.io"
+      }
+    </script>
   </Layout>
 </template>
 
@@ -44,8 +56,7 @@ import SafeEmail from "~/components/SafeEmail";
 
 export default {
   metaInfo: {
-    title: "b4bz",
-    description: "b4bZ personal website"
+    title: "b4bz"
   },
   components: {
     SafeEmail
