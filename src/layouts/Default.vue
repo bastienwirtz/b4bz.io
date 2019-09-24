@@ -1,5 +1,10 @@
 <template>
-  <div :class="{ 'is-dark': isDark === true, 'is-light': isDark === false }">
+  <div
+    :class="{
+      'is-dark': overrideDark === true,
+      'is-light': overrideDark === false
+    }"
+  >
     <header>
       <strong>
         <g-link to="/"
@@ -11,7 +16,7 @@
       <a
         href="#"
         class="is-pulled-right"
-        @click="toggleTheme()"
+        @click.prevent="toggleTheme()"
         aria-label="Toggle dark mode"
         ><font-awesome :icon="['fas', 'adjust']"
       /></a>
@@ -42,18 +47,19 @@ export default {
   },
   data: function() {
     return {
-      isDark: null
+      overrideDark: null
     };
+  },
+  computed: {
+    isDark: function() {
+      return this.overrideDark !== null
+        ? this.overrideDark
+        : matchMedia("(prefers-color-scheme: dark)").matches;
+    }
   },
   methods: {
     toggleTheme: function() {
-      if (this.isDark !== null) {
-        // user defined
-        this.isDark = !this.isDark;
-      } else {
-        // system pref
-        this.isDark = !matchMedia("(prefers-color-scheme: dark)").matches;
-      }
+      this.overrideDark = !this.isDark;
     }
   }
 };
