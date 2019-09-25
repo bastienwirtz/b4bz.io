@@ -9,7 +9,7 @@
           very uncertain pace.
           <span class="location"
             ><font-awesome :icon="['fas', 'map-marker-alt']" />
-            <strong>Earthling</strong> - born & raise in France, currently
+            <strong>Earthling</strong> - born & raised in France, currently
             living in San Francisco.</span
           >
         </p>
