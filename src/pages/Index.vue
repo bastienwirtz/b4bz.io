@@ -39,15 +39,16 @@
         </div>
       </div>
     </section>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Bastien Wirtz",
-        "jobTitle": "Software engineer",
-        "url": "https://b4bz.io"
-      }
-    </script>
+    <script
+      type="application/ld+json"
+      v-html="{
+        '@context': 'http://schema.org',
+        '@type': 'Person',
+        name: 'Bastien Wirtz',
+        jobTitle: 'Software engineer',
+        url: 'https://b4bz.io'
+      }"
+    ></script>
   </Layout>
 </template>
 
