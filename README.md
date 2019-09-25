@@ -1,6 +1,7 @@
 # Default starter for Gridsome
 
-Just a simple personal page build with gridsome and bulma.
+Source code of https://b4bz.io.
+Just a simple personal page build with [Gridsome](https://gridsome.org/) and [Bulma](https://bulma.io/).
 
 ### Start the local dev server
 
@@ -15,4 +16,3 @@ yarn develop
 yarn install
 yarn develop
 ```
-
