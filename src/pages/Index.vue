@@ -21,18 +21,21 @@
           <a
             href="https://github.com/bastienwirtz"
             target="_blank"
+            rel="noopener"
             aria-label="Follow me on Github"
             ><font-awesome :icon="['fab', 'github']"
           /></a>
           <a
             href="https://twitter.com/babooon"
             target="_blank"
+            rel="noopener"
             aria-label="Follow me on Twitter"
             ><font-awesome :icon="['fab', 'twitter']"
           /></a>
           <a
             href="https://www.linkedin.com/in/bastien-wirtz/?locale=en_US"
             target="_blank"
+            rel="noopener"
             aria-label="Linkedin"
             ><font-awesome :icon="['fab', 'linkedin-in']"
           /></a>
