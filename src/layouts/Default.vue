@@ -54,8 +54,8 @@ export default {
     isDark: function() {
       if (process.isServer) {
         // matchMedia will not work server side
-        // default is dark mode
-        return true;
+        // default is light mode
+        return false;
       }
 
       return this.overrideDark !== null

@@ -71,23 +71,23 @@ $theme-dark: (
   }
 
   // Default theme
-  @include theme($theme-dark);
+  @include theme($theme-light);
 
   // System pref theme
-  @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
-    @include theme($theme-dark);
+  @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+    @include theme($theme-light);
   }
 
-  @media (prefers-color-scheme: light) {
-    @include theme($theme-light);
+  @media (prefers-color-scheme: dark) {
+    @include theme($theme-dark);
   }
 
   // User override theme
-  &.is-dark {
-    @include theme($theme-dark);
-  }
-
   &.is-light {
     @include theme($theme-light);
+  }
+
+  &.is-dark {
+    @include theme($theme-dark);
   }
 }
