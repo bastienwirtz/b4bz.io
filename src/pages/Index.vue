@@ -19,6 +19,12 @@
 
         <div class="social-contacts is-inline-block">
           <a
+            href="/bastien_wirtz_resume.pdf"
+            target="_blank"
+            aria-label="Curriculum Vitae"
+            ><font-awesome :icon="['fas', 'file-pdf']"
+          /></a>
+          <a
             href="https://github.com/bastienwirtz"
             target="_blank"
             rel="noopener"
@@ -64,6 +70,20 @@ export default {
   },
   components: {
     SafeEmail
+  },
+  mounted: function() {
+    console.info(
+      "",
+      " ██████╗ ██╗  ██╗██████╗ ███████╗\n",
+      " ██╔══██╗██║  ██║██╔══██╗╚══███╔╝\n",
+      " ██████╔╝███████║██████╔╝  ███╔╝ \n",
+      " ██╔══██╗╚════██║██╔══██╗ ███╔╝  \n",
+      " ██████╔╝     ██║██████╔╝███████╗\n",
+      " ╚═════╝      ╚═╝╚═════╝ ╚══════╝\n"
+    );
+    console.info(
+      "Hey stranger! there's not so much to see here, but feel free to check out the source here: https://github.com/bastienwirtz/b4bz.io"
+    );
   }
 };
 </script>

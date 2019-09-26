@@ -6,7 +6,8 @@ import { config, library } from "@fortawesome/fontawesome-svg-core";
 import {
   faAdjust,
   faMapMarkerAlt,
-  faCode
+  faCode,
+  faFilePdf
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -26,7 +27,8 @@ library.add(
   faAdjust,
   faMapMarkerAlt,
   faLinkedinIn,
-  faCode
+  faCode,
+  faFilePdf
 );
 
 export default function(Vue, { router, head, isClient }) {
