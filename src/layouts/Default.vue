@@ -97,12 +97,5 @@ body {
   header {
     padding: 20px;
   }
-
-  .codelines {
-    color: hsla(0, 0%, 100%, 0.6);
-    background: url("~@/assets/img/codelines.svg"), #2b3137;
-    background-position: center 10%;
-    background-size: cover;
-  }
 }
 </style>
