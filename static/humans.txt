@@ -1,0 +1,17 @@
+/* TEAM */
+Your title: Bastien Wirtz
+Site:b4bz.io https://b4bz.io
+Mail: bastien.wirtz@gmail.com
+Github:  https://github.com/bastienwirtz/
+Twitter: babooon
+Location: Earth.
+ 
+
+/* SITE */
+Standards: HTML5, CSS3, SASS, JAVASCRIPT
+Components: VueJs, Gridsome, Bulma
+Software: vscode, gimp, gridsome-cli
+
+
+/* THANKS */
+Thanks to html, css, and all the others...
