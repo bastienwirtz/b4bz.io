@@ -40,7 +40,7 @@ export default {
       meta: [
         {
           name: "theme-color",
-          content: this.isDark ? "#131313" : "#f5f5f5"
+          content: this.isDark ? "#1b1b1b" : "#f5f5f5"
         }
       ]
     };

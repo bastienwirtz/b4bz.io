@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <h1 class="title is-1">Hi!<span class="emoji">👋</span></h1>
+        <h1 class="title is-2">Hi!<span class="emoji">👋</span></h1>
         <p class="subtitle">
           I'm <span class="highlight">Bastien</span>. I build things, mostly
           using code, or sometimes a hammer. <br />I may post stuff here, at a
@@ -90,13 +90,13 @@ export default {
 
 <style lang="scss" scoped>
 .subtitle {
-  margin-bottom: 10px;
+  padding-top: 0.5rem;
 }
 .location {
   display: block;
   margin: 0.8rem 0 1.5rem 0;
   font-size: 0.8rem;
-
+  color: #878b8f;
   svg {
     margin-right: 3px;
   }
@@ -104,7 +104,7 @@ export default {
 
 .emoji {
   margin-left: 3px;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
 }
 
 .social-contacts {
