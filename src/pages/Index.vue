@@ -13,11 +13,11 @@
             living in San Francisco.</span
           >
         </p>
-        <SafeEmail class="button is-primary is-inline-block"
-          >Say hello!</SafeEmail
-        >
+        <SafeEmail class="button is-primary is-inline-block">
+          Say hello!
+        </SafeEmail>
 
-        <div class="social-contacts is-inline-block">
+        <div class="social-contacts">
           <a
             href="/bastien_wirtz_resume.pdf"
             target="_blank"
@@ -73,15 +73,13 @@ export default {
   },
   mounted: function() {
     console.info(
-      "",
+      "\n",
       " ██████╗ ██╗  ██╗██████╗ ███████╗\n",
       " ██╔══██╗██║  ██║██╔══██╗╚══███╔╝\n",
       " ██████╔╝███████║██████╔╝  ███╔╝ \n",
       " ██╔══██╗╚════██║██╔══██╗ ███╔╝  \n",
       " ██████╔╝     ██║██████╔╝███████╗\n",
-      " ╚═════╝      ╚═╝╚═════╝ ╚══════╝\n"
-    );
-    console.info(
+      " ╚═════╝      ╚═╝╚═════╝ ╚══════╝\n\n",
       "Hey stranger! there's not so much to see here, but feel free to check out the source here: https://github.com/bastienwirtz/b4bz.io"
     );
   }
@@ -108,6 +106,7 @@ export default {
 }
 
 .social-contacts {
+  display: inline-block;
   a {
     font-size: 1.4rem;
     padding: 1rem 0.5rem;

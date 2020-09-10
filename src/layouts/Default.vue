@@ -15,7 +15,6 @@
 
       <a
         href="#"
-        class="is-pulled-right"
         @click.prevent="toggleTheme()"
         aria-label="Toggle dark mode"
         ><font-awesome :icon="['fas', 'adjust']"
@@ -96,6 +95,8 @@ body {
 
   header {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 </style>
