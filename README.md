@@ -1,4 +1,4 @@
-# Default starter for Gridsome
+# `b4bz.io`
 
 Source code of https://b4bz.io.
 Just a simple personal page build with [Gridsome](https://gridsome.org/) and [Bulma](https://bulma.io/).
@@ -14,5 +14,5 @@ yarn develop
 
 ```bash
 yarn install
-yarn develop
+yarn build
 ```
